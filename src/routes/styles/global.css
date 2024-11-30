@@ -4,7 +4,7 @@
 :root {
     --color-darkblue: #022b3a;
     --color-green: #1f7a8c;
-    --color-lightbleu: #bfdbf7;
+    --color-lightblue: #bfdbf7;
     --color-lightgrey: #e1e5f2;
     --color-white: #FFFFFF;
     --color-black: #000000;
@@ -13,12 +13,34 @@
     --font-text: 'Lato', sans-serif;
   }
 
-* {
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: "Lato", sans-serif;
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--font-text);
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    margin: 0;
 }
 
 h1, h2 {
     font-family: var(--font-title);
     color: #022b3a;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
 }
 

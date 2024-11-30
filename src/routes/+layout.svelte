@@ -19,8 +19,17 @@
 
 <style>
     main {
+        flex: 1;  
         max-width: 80rem;
         margin: 2rem auto;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-lightgrey);
+        height: 10vh; 
     }
 
 </style>
