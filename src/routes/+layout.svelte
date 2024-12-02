@@ -16,9 +16,15 @@
     <slot />
 </main>
 
-<footer>
-    <p>Copyright &copy; {currentYear}</p>
-</footer>
+<footer class="text-center py-3">
+    <div class="mb-3">
+        <p class="mb-0">Copyright &copy; Law Searcher {currentYear} Tous droits réservés</p>
+    </div>
+    <ul class="list-unstyled d-flex justify-content-center gap-3">
+    <li><a href="#mentions-legales" class="text-decoration-none link-footer" target="_blank">Mentions légales</a></li>
+    <li><a href="#cgu" class="text-decoration-none link-footer" target="_blank">CGU</a></li>
+    </ul>
+</footer>  
 
 <style>
     main {
@@ -28,10 +34,23 @@
     }
 
     footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: var(--color-lightgrey);
         height: 7vh; 
+        padding: 0 10px;
+    }
+
+    .link-footer {
+        color: var(--color-black);
+        font-size: 17px;
+    }
+
+    .link-footer:hover {
+        color: var(--color-green);
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            height: 20%;
+        }
     }
 </style>
