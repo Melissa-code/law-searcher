@@ -1,7 +1,11 @@
 <script>
     import Titre from '$lib/titre.svelte';
     import Menu from '$lib/menu.svelte';
+    import Searchbar from '$lib/searchbar.svelte';
     import './styles/global.css';
+
+    const now = new Date();
+    const currentYear = now.getFullYear();
 </script>
 
 <header>
@@ -10,11 +14,12 @@
 </header>
 
 <main>
+    <Searchbar/>
     <slot />
 </main>
 
 <footer>
-    <p>Copyright &copy; 2024</p>
+    <p>Copyright &copy; {currentYear}</p>
 </footer>
 
 <style>
@@ -29,7 +34,6 @@
         justify-content: center;
         align-items: center;
         background-color: var(--color-lightgrey);
-        height: 10vh; 
+        height: 7vh; 
     }
-
 </style>

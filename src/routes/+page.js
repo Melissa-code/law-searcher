@@ -1,3 +1,5 @@
+import { loisStore } from '$lib/store';
+
 /**
  * Check and remove the duplicate data 
  * 
@@ -18,12 +20,16 @@ function removeDuplicatesByTitle(array, key) {
 
 /** @type {import('./$types').PageLoad} */
 export async function load({fetch}) {
-    const request = await fetch('https://www.data.gouv.fr/api/1/datasets/?q=loi');
-    const response = await request.json();
-    console.log(response);
-    let results = response.data.slice(1, 10);
-    results = removeDuplicatesByTitle(results, 'title');
-    console.log(results)
+    try {
+        const request = await fetch('https://www.data.gouv.fr/api/1/datasets/?q=loi');
+        const response = await request.json();
+        let results = response.data.slice(1, 10);
+        results = removeDuplicatesByTitle(results, 'title');
 
-    return { dataApi:results };
+        return { dataApi:results };
+    } catch(error) {
+        console.error('Erreur au cours du chargement des données :', error);
+        
+        return { dataApi: [] };
+    }
 }

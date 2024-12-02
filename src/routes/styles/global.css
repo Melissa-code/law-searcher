@@ -31,7 +31,7 @@ body {
     margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--font-title);
     color: #022b3a;
 }
@@ -44,3 +44,30 @@ h2 {
     font-size: 24px;
 }
 
+h3 {
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+.btn-custom {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color:var(--color-lightblue);
+    color: var(--color-black);
+}
