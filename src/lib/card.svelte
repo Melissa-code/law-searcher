@@ -3,9 +3,8 @@
     export let description;
     export let buttonText;
 
-  import { createEventDispatcher } from 'svelte';
-  const dispatch = createEventDispatcher();
-   
+    import { createEventDispatcher } from 'svelte';
+    const dispatch = createEventDispatcher();
 </script>
   
 <div class="card">
@@ -56,7 +55,7 @@
         display: -webkit-box; 
         -webkit-box-orient: vertical; 
         overflow: hidden; 
-        text-overflow: ellipsis; /* ... */
+        text-overflow: ellipsis; 
         line-clamp: 2;
         -webkit-line-clamp: 2;
     }

@@ -1,7 +1,6 @@
 <script>
     import Titre from '$lib/titre.svelte';
     import Menu from '$lib/menu.svelte';
-    import Searchbar from '$lib/searchbar.svelte';
     import './styles/global.css';
 
     const now = new Date();
@@ -14,7 +13,6 @@
 </header>
 
 <main>
-    <Searchbar/>
     <slot />
 </main>
 

@@ -2,25 +2,40 @@
 // @ts-nocheck
   import Card from '$lib/card.svelte';
   import Modal from '$lib/modal.svelte';
+  import Searchbar from '$lib/searchbar.svelte';
 
   export let data; 
   const lois = data.dataApi;
   console.log(lois)
 
+  let filteredLaws = lois;
   /**
    * @type {{ title: any; description: any; } | null}
    */
-  let selectedLoi = null; 
+   let selectedLoi = null; 
+
+  /**
+   * filter the laws by title 
+   * @param searchTerm
+   */
+  function handleSearch(searchTerm) {
+    const term = searchTerm.toLowerCase();
+    filteredLaws = lois.filter((loi) => loi.title.toLowerCase().includes(term));
+  }
 </script>
+
+
+<!--  Searchbar -->
+<Searchbar onSearch={handleSearch} />
 
 <!-- Laws cards -->
 <div class="cards-container">
-  {#each lois as loi}
+  {#each filteredLaws as loi}
     <Card
       title={loi.title}
       description={loi.description}
-      buttonText="Voir la description" 
-      on:click={()=> selectedLoi = loi}
+      buttonText="Voir la description"
+      on:click={() => (selectedLoi = loi)}
     />
   {/each}
 </div>

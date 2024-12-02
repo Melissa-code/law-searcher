@@ -1,5 +1,3 @@
-import { loisStore } from '$lib/store';
-
 /**
  * Check and remove the duplicate data 
  * 
