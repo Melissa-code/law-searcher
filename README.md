@@ -1,6 +1,12 @@
-# sv
+# Law Searcher 
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+See the web site : [Law Searcher](https://law-searcher.netlify.app)
+
+
+## Requirements
+
+Install Node.JS
+
 
 ## Creating a project
 

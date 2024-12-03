@@ -61,7 +61,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);  
     gap: 20px;
-    margin: 10rem auto;  
+    margin: 5rem auto;  
     max-width: 1200px;  
     justify-content: center;  
     align-content: center;  
