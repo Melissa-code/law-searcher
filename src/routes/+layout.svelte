@@ -33,7 +33,6 @@
 
     footer {
         background-color: var(--color-lightgrey);
-        height: 8vh; 
         padding: 0 10px;
     }
 
@@ -44,11 +43,5 @@
 
     .link-footer:hover {
         color: var(--color-green);
-    }
-
-    @media (max-width: 768px) {
-        footer {
-            height: 20%;
-        }
     }
 </style>

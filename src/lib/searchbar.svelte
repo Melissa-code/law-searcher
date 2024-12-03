@@ -17,7 +17,7 @@
 </script>
 
 
-<div class="input-container my-3 my-md-5">
+<div class="input-container my-2">
     <label for="search-input" class="input-label">Rechercher une loi :</label>
     <div class="input-wrapper">
         <input 

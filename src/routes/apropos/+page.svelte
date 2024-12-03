@@ -2,7 +2,7 @@
   import Title from '$lib/title.svelte';
 </script>
 
-<div class="container my-md-4 ms-3">
+<div class="container ms-3">
     <Title title="A Propos" />
 </div>
 
