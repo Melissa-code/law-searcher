@@ -4,7 +4,7 @@
             <div class="navbar-content w-100 d-flex flex-column flex-lg-row justify-content-center align-items-center">
                 <!-- Logo -->
                 <a class="navbar-brand text-light d-flex align-items-center" href="/">
-                    <img src="logo-law-searcher.svg" alt="site" width="45" style="color:white;">
+                    <img src="logo-law-searcher.svg" alt="site" width="60" style="color:white;">
                     <span class="brand px-2">LAW SEARCHER</span>
                 </a>
 

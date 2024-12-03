@@ -24,10 +24,15 @@ export async function load({fetch}) {
         let results = response.data.slice(1, 10);
         results = removeDuplicatesByTitle(results, 'title');
 
-        return { dataApi:results };
+        return { 
+            dataApi:results
+        };
     } catch(error) {
         console.error('Erreur au cours du chargement des données :', error);
         
-        return { dataApi: [] };
+        return { 
+            dataApi: [],
+            title: "Erreur de chargement du titre" 
+        };
     }
 }

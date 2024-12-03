@@ -1,5 +1,4 @@
 <script>
-    import Titre from '$lib/titre.svelte';
     import Menu from '$lib/menu.svelte';
     import './styles/global.css';
 
@@ -8,16 +7,15 @@
 </script>
 
 <header>
-    <Menu/>
-    <Titre titre="titre défini"/>
+    <Menu />
 </header>
 
 <main>
     <slot />
 </main>
 
-<footer class="text-center py-3">
-    <div class="mb-3">
+<footer class="text-center py-2">
+    <div class="my-3">
         <p class="mb-0">Copyright &copy; Law Searcher {currentYear} Tous droits réservés</p>
     </div>
     <ul class="list-unstyled d-flex justify-content-center gap-3">
@@ -35,7 +33,7 @@
 
     footer {
         background-color: var(--color-lightgrey);
-        height: 7vh; 
+        height: 8vh; 
         padding: 0 10px;
     }
 

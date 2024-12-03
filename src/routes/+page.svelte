@@ -3,10 +3,11 @@
   import Card from '$lib/card.svelte';
   import Modal from '$lib/modal.svelte';
   import Searchbar from '$lib/searchbar.svelte';
+  import Title from '$lib/title.svelte';
 
   export let data; 
   const lois = data.dataApi;
-  console.log(lois)
+  //console.log(lois)
 
   let filteredLaws = lois;
   /**
@@ -24,6 +25,10 @@
   }
 </script>
 
+
+<div>
+  <Title title="Accueil" showTitle={false}/>
+</div>
 
 <!--  Searchbar -->
 <Searchbar onSearch={handleSearch} />
@@ -56,7 +61,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);  
     gap: 20px;
-    margin: 4rem auto;  
+    margin: 10rem auto;  
     max-width: 1200px;  
     justify-content: center;  
     align-content: center;  
@@ -71,6 +76,7 @@
   @media (max-width: 768px) {
     .cards-container {
       grid-template-columns: 1fr;
+      margin: 3rem auto;  
     }
   }
 </style>

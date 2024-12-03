@@ -34,15 +34,19 @@ body {
 
 h1, h2, h3 {
     font-family: var(--font-title);
-    color: #022b3a;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2rem;
+    text-align: left;
 }
 
 h2 {
     font-size: 24px;
+}
+
+h1, h2 {
+    color: var(--color-darkblue);
 }
 
 h3 {
@@ -52,11 +56,11 @@ h3 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
 }
 
 a:hover {
-    color: black;
+    color: var(--color-black);
 }
 
 .btn-custom {
