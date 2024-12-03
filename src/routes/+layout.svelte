@@ -14,8 +14,8 @@
     <slot />
 </main>
 
-<footer class="text-center py-2">
-    <div class="my-3">
+<footer class="text-center py-1">
+    <div class="my-1">
         <p class="mb-0">Copyright &copy; Law Searcher {currentYear} Tous droits réservés</p>
     </div>
     <ul class="list-unstyled d-flex justify-content-center gap-3">
