@@ -7,7 +7,7 @@
 </div>
 
 <!-- informations about Law Searcher -->
-<div class="container mx-3">
+<div class="container mx-3 my-5">
     <div class="row">
         <div class="col-12 my-2">
             <h2 class="mb-3">Présentation</h2>
